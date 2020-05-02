@@ -12,6 +12,7 @@ services:
             - ${CONFIG}/web:/config:Z
             - ${CONFIG}/web/letsencrypt:/etc/letsencrypt:Z
             - ${CONFIG}/transcripts:/usr/share/jitsi-meet/transcripts:Z
+            - /home/argodeep/build/jitsi-meet/:/usr/share/jitsi-meet
         environment:
             - ENABLE_AUTH
             - ENABLE_GUESTS
